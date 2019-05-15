@@ -6,40 +6,158 @@ shadowsocks.sh
 - Auto Install Shadowsocks(Python) Server for CentOS/Debian/Ubuntu
 - https://teddysun.com/342.html
 
+安装：
+```
+wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+chmod +x shadowsocks.sh
+./shadowsocks.sh 2>&1 | tee shadowsocks.log
+```
+
+卸载：
+```
+./shadowsocks.sh uninstall
+```
+
 shadowsocks-libev.sh
 ===============
 - Auto Install Shadowsocks(libev) Server for CentOS
 - https://teddysun.com/357.html
+
+安装：
+```
+wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh
+chmod +x shadowsocks-libev.sh
+./shadowsocks-libev.sh 2>&1 | tee shadowsocks-libev.log
+```
+卸载：
+```
+./shadowsocks-libev.sh uninstall
+```
 
 shadowsocks-libev-debian.sh
 ===============
 - Auto Install Shadowsocks(libev) Server for Debian/Ubuntu
 - https://teddysun.com/358.html
 
+安装：
+```
+wget --no-check-certificate -O shadowsocks-libev-debian.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev-debian.sh
+chmod +x shadowsocks-libev-debian.sh
+./shadowsocks-libev-debian.sh 2>&1 | tee shadowsocks-libev-debian.log
+```
+
+卸载：
+```
+./shadowsocks-libev-debian.sh uninstall
+
+```
+
 shadowsocks-go.sh
 ===============
 - Auto Install Shadowsocks(Go) Server for CentOS/Debian/Ubuntu
 - https://teddysun.com/392.html
 
+安装：
+```
+wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh
+chmod +x shadowsocks-go.sh
+./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
+```
+
+卸载：
+```
+./shadowsocks-go.sh uninstall
+```
 shadowsocks-crond.sh
 ===============
 - Check Shadowsocks(All version) Server is running or not, and start it if not running
 - https://teddysun.com/525.html
+
+安装：
+```
+wget --no-check-certificate -O /opt/shadowsocks-crond.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-crond.sh
+chmod 755 /opt/shadowsocks-crond.sh
+```
+
+卸载：
+```
+
+```
 
 shadowsocksR.sh
 ===============
 - Auto Install ShadowsocksR Server for CentOS/Debian/Ubuntu
 - https://shadowsocks.be/9.html
 
+安装：
+```
+
+```
+
+卸载：
+```
+
+```
+
 shadowsocks-all.sh
 ==================
 - Auto Install Shadowsocks Server (all version) for CentOS/Debian/Ubuntu
 - https://teddysun.com/486.html
 
+安装：
+```
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+```
+
+卸载：
+若已安装多个版本，则卸载时也需多次运行（每次卸载一种）
+```
+./shadowsocks-all.sh uninstall
+```
+启动脚本
+启动脚本后面的参数含义，从左至右依次为：启动，停止，重启，查看状态。
+
+Shadowsocks-Python 版：
+`/etc/init.d/shadowsocks-python start | stop | restart | status`
+
+ShadowsocksR 版：
+`/etc/init.d/shadowsocks-r start | stop | restart | status`
+
+Shadowsocks-Go 版：
+`/etc/init.d/shadowsocks-go start | stop | restart | status`
+
+Shadowsocks-libev 版：
+`/etc/init.d/shadowsocks-libev start | stop | restart | status`
+
+各版本默认配置文件
+Shadowsocks-Python 版：
+`/etc/shadowsocks-python/config.json`
+
+ShadowsocksR 版：
+`/etc/shadowsocks-r/config.json`
+
+Shadowsocks-Go 版：
+`/etc/shadowsocks-go/config.json`
+
+Shadowsocks-libev 版：
+`/etc/shadowsocks-libev/config.json`
+
 haproxy.sh
 ===============
 - Auto Install haproxy for Shadowsocks Server
 - https://shadowsocks.be/10.html
+
+安装：
+```
+
+```
+
+卸载：
+```
+
+```
 
 Copyright (C) 2014-2019 Teddysun
 
