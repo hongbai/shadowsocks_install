@@ -50,7 +50,8 @@ Update 2019.05.15
 使用方法：
 使用root用户登录，运行以下命令：
 
-```wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh
+```
+wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh
 chmod +x shadowsocks-go.sh
 ./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
 ```
